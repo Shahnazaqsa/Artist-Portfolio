@@ -1,0 +1,1 @@
+   # title = db.Column(db.String(), unique=False, nullable=False)

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* body{
+  background-attachment: fixed;
+} */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar img{
+  width: 80px;
+  height: 80px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.custom-navbar {
+  background-color: #EBF4F6;
+  /* border-bottom: 2px solid #37B7C3; */
+}
+
+.custom-navbar .navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 5px;
+  font-style: normal;
+}
+
+.custom-navbar .nav-link {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px 5px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #37B7C3;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: black;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  color: black;
+}
+.custom-navbar .social-icon{
+  display: flex;
+}
+.custom-navbar .social-icon a{
+  text-decoration: none;
+  list-style: none;
+  color: #071952;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px 5px;
+  font-size: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #071952;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero-section .profile img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hero-section .desc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 20px;
+}
+
+.hero-section .desc .greet {
+  font-size: 50px;
+}
+
+.hero-section .desc .name span {
+  font-size: 30px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.hero-section .desc .occ {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero-section .desc .greet {
+    font-size: 80px;
+  }
+
+  .hero-section .desc .name {
+    font-size: 50px;
+  }
+
+  .hero-section .desc .occ {
+    font-size: 30px;
+  }
+}
+
+/* About Section */
+.about-section {
+  background: #EBF4F6;
+  color: #071952;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.about-section h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+
+.about-section .profile img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-section .about-artist {
+  font-size: 18px;
+  max-width: 600px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-section .about-artist {
+    font-size: 25px;
+  }
+}
+
+/* Project Section */
+.project-section {
+  background: #088395;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.project-section h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+.project-section a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #EBF4F6;
+  border-radius: 20px;
+  margin: 30px auto;
+  color: black;
+  transition: all 1s ease-in-out;
+  max-width: 1000px;
+}
+
+
+.general:hover {
+  background: #071952;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.general .cat-pic img {
+  width: 100%;
+  max-width: 700px;
+  height: 200px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.project-section .general .cat-desc {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .general {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .general .cat-pic,
+  .general .cat-desc {
+    margin: 20px;
+  }
+}
+/* projects page */
+/* .container-fluid .container{
+
+   background-image: url("/static/photos/p1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+} */
+.project-container .row{
+  margin: 12px;
+}
+.project-container .card{ 
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/photos/p2.jpeg"); */
+  height: 50%;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white; */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.project-container .card:hover{
+   transform: scale(1.05); 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #EBF4F6;
+}
+
+.contact-section .form {
+  background: #071952;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.contact-section h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-section .submit {
+  padding: 10px;
+  background: #EBF4F6;
+  border: none;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  color: #071952;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-section .submit:hover {
+  background: #071952;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-section .form-control {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-section .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section .social-icon {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.contact-section .social-icon a {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0 6px;
+  color: #071952;
+  transition: all 0.3s ease-in-out;
+  font-size: 25px;
+}
+
+.contact-section .social-icon a:hover {
+  color: white;
+  background: #071952;
+  border-radius: 10px;
+}
+
+.contact-section .email {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact-section .email a {
+  text-decoration: none;
+  color: #071952;
+}
+
+.contact-section .email a:hover {
+  color: #37B7C3;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer Section */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  background: #071952;
+  color: white;
+  width: 100%;
+}
