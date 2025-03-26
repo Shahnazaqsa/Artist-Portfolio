@@ -32,20 +32,20 @@ app.config.update(
     MAIL_SERVER="smtp.gmail.com",
     MAIL_PORT="465",
     MAIL_USE_SSL=True,
-    MAIL_USERNAME="your username",
-    MAIL_PASSWORD="your password",
+    MAIL_USERNAME="darakshan312@gmail.com",
+    MAIL_PASSWORD="gove cfnw moby ukes",
 )
 mail = Mail(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root@localhost/databasename"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root@localhost/myart"
 db = SQLAlchemy(app)
 
-app.config["SECRET_KEY"] = "anysecretekey"
+app.config["SECRET_KEY"] = "somethingnumberwebsite123456"
 csrf = CSRFProtect(app)
 
 # Single User Configuration
-USERNAME = "username"
-password = "password"
+USERNAME = "admin"
+password = "darakhshan@ambrani"
 PASSWORD_HASH = generate_password_hash(password)
 UPLOAD_FOLDER = "static/photos"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -140,7 +140,7 @@ def home():
         mail.send_message(
             "New Message From " + form.name.data,
             sender=form.email.data,
-            recipients=["your email"],
+            recipients=["darakshan312@gmail.com"],
             body=form.message.data,
         )
         flash("Your message has been sent successfully!", "success")
@@ -237,4 +237,5 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    
+    app.run(debug=True)
